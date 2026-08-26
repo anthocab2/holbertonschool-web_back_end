@@ -1,102 +1,79 @@
-# NoSQL
+# ES6 Basic
 
 ## Description
 
-This project introduces the fundamentals of NoSQL databases with a focus on MongoDB and PyMongo.
+This project introduces the fundamental concepts and features of ECMAScript 6 (ES6), also known as ECMAScript 2015.
 
-The project covers database and collection operations, document creation, querying, updating, deleting, and interacting with MongoDB through Python. It also introduces practical data analysis by extracting statistics from Nginx logs stored in MongoDB.
+The project focuses on modern JavaScript syntax and features such as `const`, `let`, arrow functions, default parameters, rest and spread syntax, template literals, object properties, iterators, and `for...of` loops.
 
 ## Learning Objectives
 
 By the end of this project, I should be able to explain:
 
-* What NoSQL means
-* The differences between SQL and NoSQL databases
-* What ACID means
-* What document storage is
-* The different types of NoSQL databases
-* The benefits of using a NoSQL database
-* How to query information from a NoSQL database
-* How to insert, update, and delete documents
-* How to use MongoDB
-* How to interact with MongoDB using Python and PyMongo
+* What ES6 is
+* New features introduced in ES6
+* The difference between constants and variables
+* Block-scoped variables
+* Arrow functions
+* Default function parameters
+* Rest parameters
+* Spread syntax
+* String templating using template literals
+* Object creation and properties in ES6
+* Iterators
+* `for...of` loops
 
 ## Requirements
 
-### MongoDB Command Files
-
-* Ubuntu 20.04 LTS
-* MongoDB 4.4
+* All files are interpreted/compiled on Ubuntu 20.04 LTS
+* Node.js 20.x.x
+* npm 9.x.x or compatible version
 * All files must end with a new line
-* The first line of every MongoDB command file must be a comment
-* File length is tested using `wc`
-
-### Python Scripts
-
-* Ubuntu 20.04 LTS
-* Python 3.9
-* PyMongo 4.8.0
-* All files must end with a new line
-* The first line of every Python script must be exactly `#!/usr/bin/env python3`
-* Code must follow `pycodestyle` 2.5.*
-* All modules must contain documentation
-* All functions must contain documentation
-* Python code must not execute when imported
-
-## Files
-
-| File                       | Description                                                             |
-| -------------------------- | ----------------------------------------------------------------------- |
-| `0-list_databases`         | Lists all databases in MongoDB                                          |
-| `1-use_or_create_database` | Creates or switches to the `my_db` database                             |
-| `2-insert`                 | Inserts a document into the `school` collection                         |
-| `3-all`                    | Lists all documents in the `school` collection                          |
-| `4-match`                  | Lists documents matching the name `Holberton school`                    |
-| `5-count`                  | Displays the number of documents in the `school` collection             |
-| `6-update`                 | Adds or updates the address of matching school documents                |
-| `7-delete`                 | Deletes all school documents matching a specific name                   |
-| `8-all.py`                 | Returns all documents from a MongoDB collection using PyMongo           |
-| `9-insert_school.py`       | Inserts a school document using keyword arguments and returns its `_id` |
-| `10-update_topics.py`      | Updates the topics of schools matching a specific name                  |
-| `11-schools_by_topic.py`   | Returns schools that teach a specified topic                            |
-| `12-log_stats.py`          | Displays statistics about Nginx logs stored in MongoDB                  |
-
-## MongoDB Usage
-
-MongoDB command files can be executed by passing them to the Mongo shell:
-
-```bash
-cat 0-list_databases | mongo
-```
-
-When a database is required:
-
-```bash
-cat 3-all | mongo my_db
-```
-
-## Python Usage
-
-Python scripts can be executed directly after giving them executable permissions:
-
-```bash
-chmod +x 12-log_stats.py
-./12-log_stats.py
-```
-
-Python files can be checked for style compliance with:
-
-```bash
-pycodestyle 12-log_stats.py
-```
+* JavaScript files must use the `.js` extension
+* All functions must be exported
+* Jest is used for testing
+* Babel is used for JavaScript compilation
+* ESLint is used for code analysis and style checking
+* The `node_modules` directory must not be pushed to the repository
 
 ## Technologies
 
-* MongoDB 4.4
-* Python 3.9
-* PyMongo 4.8.0
-* Ubuntu 20.04 LTS
+* JavaScript
+* ECMAScript 6 (ES6)
+* Node.js
+* npm
+* Jest
+* Babel
+* ESLint
+
+## Files
+
+| File             | Description                                                |
+| ---------------- | ---------------------------------------------------------- |
+| `0-constants.js` | Demonstrates the use of `const` and `let` instead of `var` |
+
+## Usage
+
+Install the project dependencies:
+
+```bash
+npm install
+```
+
+Run a JavaScript file using the configured development environment:
+
+```bash
+npm run dev 0-main.js
+```
+
+Run ESLint:
+
+```bash
+npx eslint 0-constants.js
+```
 
 ## Author
 
 **Anthony Caban**
+
+Holberton Schoo**
