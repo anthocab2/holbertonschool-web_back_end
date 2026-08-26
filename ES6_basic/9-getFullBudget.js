@@ -3,11 +3,7 @@ export default function getFullBudgetForCurrentYear(income, gdp, capita) {
     income,
     gdp,
     capita,
-    getIncomeInDollars(incomeValue) {
-      return `$${incomeValue}`;
-    },
-    getIncomeInEuros(incomeValue) {
-      return `${incomeValue} euros`;
-    },
+    getIncomeInDollars: (income) => `$${income}`,
+    getIncomeInEuros: (income) => `${income} euros`,
   };
 }
